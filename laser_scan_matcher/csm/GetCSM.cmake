@@ -17,11 +17,11 @@ function( download_and_compile_csm )
         SOURCE_DIR ${CSM_BINARY_DIR}/src
         #--Download step -----------------------------------------------------------
         GIT_REPOSITORY https://github.com/AndreaCensi/csm.git
-        GIT_TAG 23703a998fff57250322
+        GIT_TAG 23703a998fff572503224eae026043e8c8048773
         #-- Update/Patch command ---------------------------------------------------
         PATCH_COMMAND patch --forward -p0 -d ${CSM_BINARY_DIR}/src < ${CSM_PATCH_DIR}/patch_a || true; patch --forward -p0 -d ${CSM_BINARY_DIR}/src < ${CSM_PATCH_DIR}/patch_b || true; patch --forward -p0 -d ${CSM_BINARY_DIR}/src < ${CSM_PATCH_DIR}/patch_c || true; patch --forward -p0 -d ${CSM_BINARY_DIR}/src < ${CSM_PATCH_DIR}/patch_d || true
         #-- Configure step ---------------------------------------------------------
-        CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CSM_BINARY_DIR}/install
+        CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CSM_BINARY_DIR}/install
         #-- Build step -------------------------------------------------------------
         BUILD_IN_SOURCE 1
     )

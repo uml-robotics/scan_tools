@@ -1,5 +1,5 @@
 *** sm/csm/icp/icp.c	2011-02-17 14:18:29.906998004 -0500
---- /home/idryanov/Desktop/icp2.c	2011-02-17 14:16:50.318998004 -0500
+--- sm/csm/icp/icp.c.new	2011-02-17 14:16:50.318998004 -0500
 *************** void sm_icp(struct sm_params*params, str
 *** 184,186 ****
 --- 184,350 ----
