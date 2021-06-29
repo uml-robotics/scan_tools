@@ -31,7 +31,7 @@
 #define LASER_ORTHO_PROJECTOR_LASER_ORTHO_PROJECTOR_NODELET_H
 
 #include <nodelet/nodelet.h>
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 
 #include "laser_ortho_projector/laser_ortho_projector.h"
 

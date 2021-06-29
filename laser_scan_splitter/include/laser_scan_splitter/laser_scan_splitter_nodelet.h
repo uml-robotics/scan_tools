@@ -31,7 +31,7 @@
 #define LASER_SCAN_SPLITTER_LASER_SCAN_SPLITTER_NODELET_H
 
 #include <nodelet/nodelet.h>
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 
 #include "laser_scan_splitter/laser_scan_splitter.h"
 

@@ -87,7 +87,7 @@ LaserScanMatcher::LaserScanMatcher(ros::NodeHandle nh, ros::NodeHandle nh_privat
   else
   {
     scan_subscriber_ = nh_.subscribe(
-      "scan", 1, &LaserScanMatcher::scanCallback, this);
+      "scan_raw", 1, &LaserScanMatcher::scanCallback, this);
   }
 
   if (use_imu_)

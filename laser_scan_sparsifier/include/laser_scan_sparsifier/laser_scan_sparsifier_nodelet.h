@@ -31,7 +31,7 @@
 #define LASER_SCAN_SPARSIFIER_LASER_SCAN_SPARSIFIER_NODELET_H
 
 #include <nodelet/nodelet.h>
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 
 #include "laser_scan_sparsifier/laser_scan_sparsifier.h"
 

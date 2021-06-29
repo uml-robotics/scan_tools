@@ -39,7 +39,7 @@
 #define LASER_SCAN_MATCHER_LASER_SCAN_MATCHER_NODELET_H
 
 #include <nodelet/nodelet.h>
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 
 #include <laser_scan_matcher/laser_scan_matcher.h>
 
